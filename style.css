@@ -8,15 +8,18 @@
     --font-color: #885a2d;
     --box-color: #eee1d5;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: var(--bg);
     font-family: 'Roboto', sans-serif;
 }
+
 header {
     background-color: var(--primary);
     color: var(--secondary);
@@ -26,29 +29,36 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 header div.logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
+
 header div.logo img {
     display: inline-block;
     height: 6vmin;
     width: auto;
 }
+
 header div.logo h1 {
     font-size: 5vmin;
 }
+
 section#main.main-section {
     height: 100vh;
     padding: 5vmin;
+    padding-bottom: 0;
 }
+
 section#main.main-section div.command-box {
     display: flex;
     padding: 5vmin;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
+
 .box {
     display: flex;
     flex-direction: column;
@@ -64,51 +74,63 @@ section#main.main-section div.command-box {
     transition: all 0.3s ease-in-out;
     height: max-content;
 }
+
 .box-title {
     font-size: 3vmin;
     margin-bottom: 1rem;
 }
+
 section#main.main-section div.command-box div#items {
     flex: 1.2;
 }
+
 section#main.main-section div.command-box div#bill {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
 }
+
 section#main.main-section div.command-box div#items div.item {
     padding: .5rem;
     border-bottom: 1px solid var(--tertiary);
     width: 100%;
 }
+
 section#main.main-section div.command-box div#items div.item:last-child {
     padding: .5rem;
     border: none;
 }
+
 section#main.main-section div.command-box div#items div.item div.item-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
 }
+
 section#main.main-section div.command-box div#items div.item div.item-header p.number {
     flex: 1;
 }
+
 section#main.main-section div.command-box div#items div.item div.item-header h3.title {
     flex: 11;
 }
+
 section#main.main-section div.command-box div#items div.item div.item-header p.price {
     flex: 1;
     font-weight: bold;
 }
+
 section#main.main-section div.command-box div#items div.item div.item-content {
     color: var(--tertiary);
     padding: .5rem 0;
 }
+
 section#main.main-section div.command-box div#items div.item div.item-content p.description {
     padding: .1rem 8%;
 }
+
 .form-control {
     position: relative;
     display: flex;
@@ -120,6 +142,7 @@ section#main.main-section div.command-box div#items div.item div.item-content p.
     height: max-content;
     width: 100%;
 }
+
 .form-control label {
     font-size: 1.4vmin;
     position: absolute;
@@ -130,6 +153,7 @@ section#main.main-section div.command-box div#items div.item div.item-content p.
     background-color: var(--box-color);
     padding: .1rem .1rem;
 }
+
 .form-control input {
     padding: .5rem;
     border: 2px solid var(--font-color);
@@ -138,4 +162,68 @@ section#main.main-section div.command-box div#items div.item div.item-content p.
     min-width: 100%;
     font-size: 2vmin;
     color: var(--font-color);
+}
+
+.form-control input:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+section#main.main-section div.command-pricing {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+section#main.main-section div.command-pricing div.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+section#main.main-section div.command-pricing div.pricing div.pricing-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    padding: 1rem;
+}
+
+section#main.main-section div.command-pricing div.pricing div.pricing-item p {
+    padding: 0 5px;
+}
+
+section#main.main-section div.command-pricing div.pricing div.pricing-item:last-child {
+    font-weight: bold;
+}
+
+section#main.main-section div.command-pricing div.command {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+section#main.main-section div.command-pricing div.command button.command-button {
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--btn);
+    color: var(--primary);
+    font-size: 2vmin;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+}
+
+section#main.main-section div.command-pricing div.command button.command-button:hover {
+    background-color: var(--btn-hover);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
