@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,98 @@
     <link rel="stylesheet" href="style.css">
     <title>Coffee Masters</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="img/coffee_masters_logo.png" alt="logo">
             <h1>Coffee Masters</h1>
         </div>
     </header>
 
     <section id="main" class="main-section">
         <div class="command-box">
-            <div class="items">
-                
+
+            <div id="items" class="box">
+                <p class="box-title">ITEMS</p>
+                <div class="item">
+                    <div class="item-header">
+                        <p class="number">1X</p>
+                        <h3 class="title">Cappucino</h3>
+                        <p class="price">$3.35</p>
+                    </div>
+                    <div class="item-content">
+                        <p class="description">Lite Foam</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <p class="number">1X</p>
+                        <h3 class="title">Cappucino</h3>
+                        <p class="price">$3.85</p>
+                    </div>
+                    <div class="item-content">
+                        <p class="description">Lite Milk</p>
+                        <p class="description">Double Espresso</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <p class="number">1X</p>
+                        <h3 class="title">Croissant</h3>
+                        <p class="price">$2.45</p>
+                    </div>
+                    <div class="item-content">
+                        <p class="description">Butter</p>
+                    </div>
+                </div>
             </div>
-            <div class="name"></div>
-            <div class="payment"></div>
+
+            <div id="bill">
+                <div id="name" class="box">
+                    <p class="box-title">NAME</p>
+                    <div class="form-control">
+                        <label for="order_name">Name for order</label>
+                        <input type="text" name="order_name" id="order_name">
+                    </div>
+                </div>
+                <div id="payment" class="box">
+                    <p class="box-title">PAYMENT</p>
+                    <div class="form-control">
+                        <label for="card_number">Card number</label>
+                        <input type="number" name="card_number" id="card_number">
+                    </div>
+                    <div class="form-control">
+                        <label for="CCV_number">CCV number</label>
+                        <input type="number" name="CCV_number" id="CCV_number">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="command-pricing">
+            <div class="pricing">
+                <div class="pricing-item">
+                    <p class="pricing-title">Subtotal</p>
+                    <p class="pricing-value">$9.65</p>
+                </div>
+                <div class="pricing-item">
+                    <p class="pricing-title">Tax</p>
+                    <p class="pricing-value">$0.00</p>
+                </div>
+                <div class="pricing-item">
+                    <p class="pricing-title">Total</p>
+                    <p class="pricing-value">$9.65</p>
+                </div>
+            </div>
+            <div class="command">
+                <button class="command-button">Place Order</button>
+            </div>
         </div>
     </section>
 </body>
+
 </html>
